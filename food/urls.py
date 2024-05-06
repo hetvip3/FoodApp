@@ -6,7 +6,9 @@ app_name = 'food'
 
 urlpatterns = [
     #/food/
-    path('',index),
+    path('',index, name='index'),
     #/food/1
     path('food/<int:item_id>/',detail , name='detail'),
+
+    path('add',create_item)
 ]
